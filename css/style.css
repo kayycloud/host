@@ -1,0 +1,676 @@
+/* === Font Integration Start ===*/
+@font-face{
+    font-family:'Roboto', sans-serif;
+    src: url(../fonts/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto-Medium.ttf);
+    src: url(../fonts/Roboto-Bold.ttf);
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url(../fonts/DroidSerif-Regular.ttf);
+    src: url(../fonts/DroidSerif-Bold.ttf);
+}
+@font-face {
+    font-family: 'Droid Serif';
+    src: url(../fonts/DroidSerif-Regular.ttf);
+}
+/* === Font Integration End ===*/
+
+/* === Common CSS Start Here === */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1920px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+li {
+    list-style: none;
+    margin-bottom: 0;
+}
+h1 {
+    font-family: 'Droid Serif';
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+}
+h2{
+    font-family: 'Droid Serif';
+    font-size: 36px;
+    font-weight: 700;
+}
+h4 {
+    font-family: 'Droid Serif';
+    font-size: 24px;
+    font-weight: 400;
+}
+h5{
+    font-family: 'Droid Serif';
+    font-size: 22px;
+    font-weight: 700;
+}
+h6{
+    font-family: 'Droid Serif';
+    font-size: 20px;
+    font-weight: 700;
+}
+.light-font{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #F2F2F2;
+}
+p{
+    margin: 0;
+}
+/* === Common CSS End Here === */
+
+/* === Header Section CSS Start Here === */
+#navbar {
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    box-shadow: rgba(74, 74, 74, 0.166) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar-brand img{
+    width: 150px;
+}
+.top-nav{
+    background-color: #151414;
+    align-items: center;
+    vertical-align: middle;
+
+}
+.social-left ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.social-left ul li{
+    display: inline;
+    margin-right: 20px;
+}
+.social-left ul span{
+    color: #aaaaaa;
+}
+.social-left ul li a, .social-right ul li span{
+    color: #aaaaaa;
+}
+.social-left ul li a:hover{
+    color: #119ee6;
+}
+.social-right ul{
+    margin-bottom: 0;
+}
+.social-right ul li:first-child{
+    padding-right: 15px;
+    border-right: 1px solid #aaaaaa;
+}
+ul.navbar-nav{
+    margin-right: 40px;
+}
+ul.navbar-nav li{
+    margin-left: 20px;
+}
+ul.dropdown-menu{
+    padding-left: 0;
+}
+ul.hosting-li li, ul.page-li li{
+    margin-left: 0;
+}
+ul.navbar-nav li a{
+    color: #151414;
+    font-size: 16px;
+}
+ul.navbar-nav li a:hover{
+    color: #119ee6;
+}
+.cart-icon{
+    padding-left: 50px;
+    border-left: 1px solid #151414;
+}
+.cart-icon a{
+    color: #151414;
+}
+.cart-icon a:hover{
+    color: #119ee6;
+}
+.navbar-toggler{
+    background-color: #119ee6;
+}
+.cart-menu-icon{
+    position: absolute;
+    top: 80%;
+    right: 3.5%;
+}
+.cart-menu-icon span{
+    display: block;
+    width: 55px;
+    height: 55px;
+    padding-top: 6px;
+    background-color: #119ee6;
+    color: #fff;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #000;
+    font-size: 22px;
+    text-align: center;
+}
+/* Top Nav End */
+
+/* === Header Section CSS End Here === */
+
+
+
+/* === Main Section CSS Start Here === */
+
+/* --- Hero CSS Start ---*/
+.hero{
+    background-color: #f2f2f2;
+    padding: 100px 0;
+
+}
+.hero button, .search-btn button, .price-btn button{
+    background-color: #119ee6;
+    color: #fff;
+    transition: .3s;
+}
+.hero button:hover {
+    background-color: #000;
+    color: #fff;
+}
+ .search-btn button:hover {
+     background-color: #fff;
+     color: #000;
+ }
+.hero .hero-slider .owl-dots{
+    display: none;
+}
+.hero .owl-nav{
+    margin-top: 0 !important;
+}
+.hero .owl-prev{
+    position: absolute;
+    left: 0;
+    top: 48%;
+}
+.hero .owl-next{
+    position: absolute;
+    right: 0;
+    top: 48%;
+}
+.hero .owl-theme .owl-nav [class*=owl-]{
+    margin: 0;
+}
+.hero .owl-prev span{
+    font-size: 30px;
+    background-color: #119ee6;
+    padding: 15px 8px;
+    color: #fff;
+}
+.hero .owl-next span{
+    font-size: 30px;
+    background-color: #119ee6;
+    padding: 15px 8px;
+    color: #fff;
+}
+/* --- Hero CSS End ---*/
+
+/* --- Service CSS Start ---*/
+.card{
+    background-color: #119ee6;
+    color: #fff;
+    transition: .3s;
+}
+.card-icon{
+    margin-top: -27px;
+    z-index: 999;
+}
+
+.card-icon span{
+    display: block;
+    width: 55px;
+    height: 55px;
+    padding-top: 6px;
+    background-color: #119ee6;
+    color: #fff;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #000;
+    font-size: 22px;
+    text-align: center;
+}
+.card-icon span svg{
+    font-size: 22px;
+}
+.card:hover .card-icon span{
+    background-color: #000;
+    outline-color: #119ee6;
+}
+.card-body p{
+    font-size: 14px;
+}
+.hide-btn{
+    font-size: 14px;
+    color: #119ee6;
+}
+.card:hover{
+    background-color: #fff;
+    color: #151414;
+    margin-top: -30px;
+}
+.card:hover .hide-btn {
+    display: block;
+}
+/* --- Service CSS End ---*/
+
+
+/* --- Subscriber CSS Start ---*/
+.subscriber{
+    padding: 100px 0;
+    background-image: url(../images/dark-bg.png);
+}
+.domain-checker{
+    border: 8px solid #119ee6;
+}
+.form-select {
+    margin: 0;
+    border: 0;
+    background-image: url(../images/arrow-down.png);
+    background-size: 12px;
+}
+.extnsn-price p{
+    color: #F2F2F2;
+}
+.extnsn-price p span{
+    font-size: 12px;
+}
+/* --- Subscriber CSS End ---*/
+
+/* --- Feature CSS Start ---*/
+.feature, .pricing-plan, .offer-section, .why-choose-section, .client-section{
+    padding: 100px 0;
+}
+.feature-head p{
+    color: #a1a1a1;
+}
+.feature .feature-icon span{
+    font-size: 26px;
+    border-bottom: 1px solid #119ee6;
+    padding: 0 30px 10px 0;
+    color: #119ee6;
+}
+.feature-content{
+    margin-top: 40px;
+}
+.feature-content p{
+    font-size: 14px;
+}
+/* --- Feature CSS End ---*/
+
+/* --- Pricing CSS Start ---*/
+.pricing-plan, .client-section{
+    background-color: #f9f9f9;
+}
+.pricing-head p {
+    color: #a1a1a1;
+}
+.price-header{
+    background-color: #000;
+}
+.single-price .price-header p{
+    font-size: 14px;
+    font-style: italic;
+}
+.single-price .price-header h4 span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #a1a1a1;
+}
+.price-icon span{
+    margin-top: -35px;
+    display: block;
+    width: 70px;
+    height: 70px;
+    padding-top: 20px;
+    border-radius: 100%;
+    border-bottom: 1px solid #fff;
+    background-color: #000;
+    text-align: center;
+}
+.single-price{
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.price-list ul{
+    padding-left: 0;
+}
+.price-list ul li{
+    margin-bottom: 10px;
+}
+.price-list ul li span.install-icon{
+    color: #999999;
+}
+.price-list ul li span.install-charge{
+    color: #999999;
+}
+.price-btn button:hover {
+    background-color: #000;
+    color: #fff;
+}
+.middle-header {
+    background-color: #119ee6;
+}
+.price-icon-middle span{
+    background-color: #119ee6;
+}
+.price-btn-middle button{
+    background-color: #000;
+}
+.price-btn-middle button:hover{
+    background-color: #119ee6;
+}
+.recommend{
+    transform: rotate(-45deg);
+    position: absolute;
+    margin-left: -60px;
+    overflow: hidden;
+}
+.recommend h6{
+    background-color: #fff;
+    padding: 10px 40px;
+    color: #119ee6;
+    font-size: 12px;
+}
+.middle-price{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/* --- Pricing CSS End ---*/
+
+/* --- Counter CSS Start ---*/
+.counter-section{
+    padding: 100px 0;
+    background-color: #020202f5;
+    color: #fff;
+}
+.counter{
+    position: relative;
+}
+.counter-icon1{
+    background-image: url(../images/registered-domain.png);
+    background-repeat: no-repeat;
+    padding-top: 10px;
+}
+.counter-icon2{
+    background-image: url(../images/clients.png);
+    background-repeat: no-repeat;
+    padding-top: 10px;
+}
+.counter-icon3{
+    background-image: url(../images/bookmark.png);
+    background-repeat: no-repeat;
+    padding-top: 10px;
+}
+.counter-icon4{
+    background-image: url(../images/trophy.png);
+    background-repeat: no-repeat;
+    padding-top: 10px;
+}
+.counter-divider{
+    position: absolute;
+    right: 0;
+    top: 0%;
+}
+.counter-divider span{
+    font-size: 100px;
+    font-weight: 300;
+}
+.counter-title h6{
+    font-weight: 400;
+    color: #F2F2F2;
+}
+/* --- Counter CSS End ---*/
+
+/* --- Offer CSS Start ---*/
+.offer-section{
+    background-color: #f9f9f9;
+}
+.nav-pills{
+    background-color: #fff;
+    border: 0.5px solid #aaaaaa2a;
+}
+.nav-tab-btn {
+    background-color: #fff;
+    color: #999999;
+    padding: 15px 35px;
+    outline: 0 !important;
+    border-bottom: 2px solid #119ee6;
+    border-radius: 0;
+}
+.offer-section .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #fff;
+    color: #119ee6;
+    padding: 15px 35px;
+    outline: 0 !important;
+    border-bottom: 2px solid #119ee6;
+    border-radius: 0;
+}
+.tab-btn span{
+    font-size: 30px;
+}
+.tab-btn:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.btn-check:active+.btn-light:focus,
+.btn-check:checked+.btn-light:focus,
+.btn-light.active:focus,
+.btn-light:active:focus,
+.show>.btn-light.dropdown-toggle:focus {
+    box-shadow: none;
+}
+.offer-section ul li.nav-item{
+    border-right: 0.5px solid #aaaaaa2a;
+}
+
+.tab-content{
+    margin-top: 70px;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+}
+.tab-content h4{
+    font-weight: 700;
+}
+.tab-content p{
+    font-size: 14px;
+}
+.highlight-des{
+    padding-left: 30px;
+    border-left: 2px solid #aaaaaa;
+    color: #999999;
+}
+.tab-content button {
+    margin-top: 20px;
+    padding: 0;
+    color: #119ee6;
+}
+
+/* ToolTip */
+/* --- Offer CSS End ---*/
+
+/* --- Why Choose CSS Start ---*/
+.hundred-secure{
+    background-color: #119ee6;
+    padding: 20px;
+    height: 100%;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+    margin-top: -99999px;
+    padding-top: 99999px;
+    transition: .3s;
+}
+.hundred-secure:hover {
+    background-color: #000000;
+}
+.hundred-secure h2{
+    font-size: 60px;
+    color: #3fa9e9;
+}
+.hundred-secure:hover h2{
+    color: #363636;
+}
+.hundred-secure p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.hundred-secure .lock-icon span{
+    font-size: 24px;
+}
+.hundred-secure .secure span{
+    font-family: 'Droid Serif';
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 3px;
+}
+.row {
+    overflow: hidden;
+}
+/* --- Why Choose CSS End ---*/
+
+/* --- Client CSS Start ---*/
+.item-head{
+    background-image: url(../images/quote.png);
+    background-repeat: no-repeat;
+}
+.item .highlight-des{
+    padding-left: 15px;
+    border-left: 1px solid #119ee6;
+    font-size: 14px;
+    color: #333333;
+}
+.client-name h6 {
+    font-size: 18px;
+}
+.client-name p {
+    font-size: 14px;
+    color: #333333;
+}
+.client-section .owl-carousel .owl-nav{
+    margin-top: 30px;
+}
+.client-section .owl-carousel .owl-nav.disabled {
+    display: block;
+}
+
+.client-section .owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev{
+    font-size: 24px;
+    color: #000000;
+}
+.client-section .owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+    color: #119ee6;
+}
+/* --- Client CSS End ---*/
+
+/* --- Contact CSS Start ---*/
+.contact-address{
+    background-color: #f9f9f9;
+}
+.address-bg{
+    background-color: #119ee6;
+}
+.contact-address .single-address span{
+    font-size: 30px;
+}
+.contact-address .single-address p{
+    font-size: 12px;
+}
+/* --- Contact CSS End ---*/
+
+/* === Main Section CSS End Here === */
+
+
+
+/* === Footer section CSS Start Here === */
+footer{
+    padding: 100px 0;
+    background-color: #000;
+}
+footer p{
+    color: #aaaaaa;
+    font-size: 14px;
+}
+footer .social-left ul li {
+    margin-right: 7px;
+}
+footer .social-left ul li a{
+    font-size: 14px;
+}
+footer .social-left ul span{
+    font-size: 14px;
+}
+.learn-more button{
+    color: #aaaaaa;
+}
+.learn-more button:focus {
+    box-shadow: none;
+}
+.learn-more button:hover{
+    color: #fff;
+}
+.single-footer ul li span.footer-icon {
+    color: #fff;
+}
+.single-footer ul li span {
+    color: #aaaaaa;
+}
+.single-footer ul li:hover span{
+    color: #119ee6;
+}
+.single-footer ul li.list-des{
+    font-size: 14px;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.right-footer button{
+    background-color: #119ee6;
+    border: none;
+}
+.right-footer button:hover{
+    background-color: #000;
+    border: none;
+}
+.right-footer button:focus{
+    box-shadow: none;
+}
+.right-footer input::placeholder{
+    font-size: 14px;
+}
+.payment h6{
+    font-size: 18px;
+}
+/* === Footer section CSS End Here === */
